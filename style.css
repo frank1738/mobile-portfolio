@@ -13,20 +13,19 @@ body {
 }
 
 .mobile-view {
-  background-color: lightgrey;
-  width: 327px;
-  margin-top: 2rem;
-  border-radius: 0.2rem;
-  box-shadow: 0 0 10px lightgrey;
+  width: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navigation {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1rem;
   align-items: center;
-  border-bottom: 1px solid grey;
+  background-color: #3c3a39;
 }
 
 .links {
@@ -35,6 +34,10 @@ body {
   justify-content: space-between;
   font-family: "Nanum Myeongjo", serif;
   font-size: 1rem;
+}
+
+.name {
+  color: white;
 }
 
 .link-item {
@@ -55,38 +58,54 @@ body {
   color: white;
 }
 
-.introduction {
+.social-list {
   display: flex;
-  background-color: rgb(0 0 0 / 70%);
-  padding: 1rem;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 1rem;
   align-items: center;
-  background-image: url("comp.jpg");
-  background-size: cover;
-  background-blend-mode: multiply;
-  color: whitesmoke;
+}
+
+.intro-header {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ff6b00;
+  font-size: 2rem;
+}
+
+.intro-subheader {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.introduction {
+  background-color: #1c1a19;
+  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
 }
 
 .far-bars {
-  color: #143771;
-  transition: transform 50ms cubic-bezier(0.5, 0, 0.5, 1);
+  color: whitesmoke;
 }
 
 .menu-bar {
+  color: whitesmoke;
   transition: transform 50ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .menu-bar:hover {
   transform: scale(1.2);
-  color: white;
+  color: grey;
 }
 
 .social-link {
   list-style: none;
   margin-bottom: 0.8rem;
-}
-
-.social-links {
-  margin-right: 1.7rem;
 }
 
 .fa-whatsapp {
@@ -113,20 +132,33 @@ body {
 }
 
 .fa-linkedin:hover {
-  color: whitesmoke;
+  color: white;
 }
 
 .fa-github {
   font-size: 1.5rem;
-  color: white;
 }
 
 .fa-github:hover {
-  color: black;
+  color: white;
 }
 
 .intro-description {
   font-family: poppins, sans-serif;
   font-size: 0.9rem;
   margin-top: 0.5rem;
+  color: white;
+  width: 80%;
+}
+
+.vector-image {
+  position: absolute;
+  right: 0%;
+  top: 60%;
+}
+
+.second-vector {
+  position: absolute;
+  right: 1%;
+  top: 60%;
 }
