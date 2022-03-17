@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Josefin+Sans:wght@100&family=Nanum+Myeongjo&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-view {
+  width: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  background-color: #3c3a39;
+}
+
+.links {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1rem;
+}
+
+.name {
+  color: white;
+}
+
+.link-item {
+  list-style: none;
+  transition: transform 50ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.link-item:hover {
+  transform: scale(1.2);
+}
+
+.link {
+  text-decoration: none;
+  color: #143771;
+}
+
+.link:hover {
+  color: white;
+}
+
+.social-list {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.intro-header {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ff6b00;
+  font-size: 2rem;
+}
+
+.intro-subheader {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.introduction {
+  background-color: #1c1a19;
+  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.far-bars {
+  color: whitesmoke;
+}
+
+.menu-bar {
+  color: whitesmoke;
+  transition: transform 50ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.menu-bar:hover {
+  transform: scale(1.2);
+  color: grey;
+}
+
+.social-link {
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+
+.fa-whatsapp {
+  font-size: 1.5rem;
+  color: #128c7e;
+}
+
+.fa-whatsapp:hover {
+  color: white;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+  color: #00acee;
+}
+
+.fa-twitter:hover {
+  color: white;
+}
+
+.fa-linkedin {
+  font-size: 1.5rem;
+  color: #0e76a8;
+}
+
+.fa-linkedin:hover {
+  color: white;
+}
+
+.fa-github {
+  font-size: 1.5rem;
+}
+
+.fa-github:hover {
+  color: white;
+}
+
+.intro-description {
+  font-family: poppins, sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: white;
+  width: 80%;
+}
+
+.vector-image {
+  position: absolute;
+  right: 0%;
+  top: 60%;
+}
+
+.second-vector {
+  position: absolute;
+  right: 1%;
+  top: 60%;
+}
