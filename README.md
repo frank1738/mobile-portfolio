@@ -1,5 +1,5 @@
 
-This is my first Microverse Hello world project whose main focus is to test my understanding in github,githubflows,version controll and to demonstrate the ability to submit a project for code review.This also helped me to understand how to parse a Figma design to create a UI,using flexbox to place elements in the page,building a personal portfolio site and using images and backgrounds to enhance the look of the website.
+This is my  Microverse portfolio project whose main focus is to test my understanding in github,githubflows,version controll and to demonstrate the ability to submit a project for code review.This also helped me to understand how to parse a Figma design to create a UI,using flexbox to place elements in the page,building a personal portfolio site and using images and backgrounds to enhance the look of the website.
 
 Built With:</br>
 *HTML</br>
@@ -23,10 +23,6 @@ Authors
 Show your support
 Give a ⭐ if you like this project!
 
-Acknowledgments
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
 📝 License
 This project is MIT licensed.
