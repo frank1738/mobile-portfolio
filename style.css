@@ -156,13 +156,13 @@ body {
 .vector-image {
   position: absolute;
   right: 0%;
-  top: 7%;
+  top: 5%;
 }
 
 .second-vector {
   position: absolute;
   right: 1%;
-  top: 7%;
+  top: 5%;
 }
 
 .work-container-subsequent {
@@ -345,4 +345,54 @@ li {
 .get-btn:focus {
   background: #ff6b00;
   color: white;
+}
+
+.additional-info {
+  padding-top: 5rem;
+  border-top: 2px solid lightgray;
+  margin-top: 5rem;
+}
+
+.language-header {
+  font-family: poppins, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.languages {
+  font-family: poppins, sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.language {
+  margin-bottom: 1rem;
+}
+
+.vector {
+  margin-right: 0.5rem;
+}
+
+.language-container {
+  margin-bottom: 1.5rem;
+}
+
+.first {
+  position: absolute;
+  bottom: 17%;
+  right: 10%;
+}
+
+.second {
+  position: absolute;
+  bottom: 17%;
+  right: 9%;
+}
+
+.main {
+  position: absolute;
+  bottom: 16.3%;
+  right: 1%;
 }
