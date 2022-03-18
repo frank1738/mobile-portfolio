@@ -156,13 +156,13 @@ body {
 .vector-image {
   position: absolute;
   right: 0%;
-  top: 8%;
+  top: 7%;
 }
 
 .second-vector {
   position: absolute;
   right: 1%;
-  top: 8%;
+  top: 7%;
 }
 
 .work-container-subsequent {
@@ -226,7 +226,13 @@ body {
 
 .btn:hover {
   transform: scale(1.1);
-  background-color: #3c3a39;
+  background-color: rgba(255 255 255 /24%);
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.btn:focus {
+  background-color: #ff6b00;
   color: white;
 }
 
@@ -240,7 +246,14 @@ li {
 }
 
 .btn.after:hover {
-  background-color: #1c1a19;
+  background-color: rgba(255 255 255 /24%);
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.btn.after:focus {
+  background-color: #ff6b00;
+  color: white;
 }
 
 .submit-btn {
@@ -255,8 +268,14 @@ li {
 }
 
 .submit-btn:hover {
-  background-color: transparent;
-  color: #091e42;
+  background-color: rgba(255 255 255 /24%);
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.submit-btn:focus {
+  background-color: #ff6b00;
+  color: white;
 }
 
 .submit-btn.after {
@@ -265,7 +284,14 @@ li {
 }
 
 .submit-btn.after:hover {
-  background-color: transparent;
+  background-color: rgba(255 255 255 /24%);
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.submit-btn.after:focus {
+  background-color: #ff6b00;
+  color: white;
 }
 
 .subsequent-worksub-header {
@@ -282,4 +308,41 @@ li {
 
 .workimg {
   width: 325px;
+}
+
+.about-me {
+  padding: 1.5rem;
+  background-color: #1c1a19;
+}
+
+.about-header {
+  font-family: "Crete Round", sans-serif;
+  color: #ff6b00;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+
+.about-description {
+  font-family: poppins, sans-serif;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.get-btn {
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  background-color: #ff6b00;
+  color: white;
+  border: 1px solid #ff6b00;
+}
+
+.get-btn:hover {
+  background-color: rgba(255 255 255 /24%);
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.get-btn:focus {
+  background: #ff6b00;
+  color: white;
 }
