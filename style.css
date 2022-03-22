@@ -448,6 +448,8 @@ li {
   font-size: 0.9rem;
   height: 8rem;
   background-color: #fbf8f7;
+  border: none;
+  outline: none;
 }
 
 .footer-social-links {
