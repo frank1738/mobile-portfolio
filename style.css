@@ -19,6 +19,7 @@ body {
   top: 0;
   left: 0;
   background-color: white;
+  margin-bottom: 3rem;
 }
 
 .navigation {
@@ -381,18 +382,133 @@ li {
 
 .first {
   position: absolute;
-  bottom: 17%;
-  right: 10%;
+  bottom: 26.5%;
+  right: 9%;
 }
 
 .second {
   position: absolute;
-  bottom: 17%;
+  bottom: 26.5%;
   right: 9%;
 }
 
 .main {
   position: absolute;
-  bottom: 16.3%;
+  bottom: 25.9%;
   right: 1%;
+}
+
+.form-section-div {
+  padding: 2rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-description {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  color: #172b4f;
+  font-size: 1.5rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.form-btn {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  background: #ff6b00;
+  color: white;
+  font-family: poppins, sans-serif;
+  font-size: 1rem;
+  border: 1px solid #ff6b00;
+  margin-top: 1.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.user-input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-family: poppins, sans-serif;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.text-area {
+  margin-top: 2.2rem;
+  padding: 0.3rem;
+  font-family: poppins, sans-serif;
+  font-size: 0.9rem;
+  height: 8rem;
+  background-color: #fbf8f7;
+  border: none;
+  outline: none;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  align-self: center;
+}
+
+.email-link {
+  background-color: #ff6b00;
+}
+
+.fa-envelope {
+  font-size: 1.3rem;
+  color: #1c1a19;
+}
+
+.underline {
+  width: 50%;
+  height: 0.3rem;
+  background-color: #0d151e;
+  border-radius: 2rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  margin-top: 0.1rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  border-top: 1.5px solid lightgray;
+  padding-top: 1.3rem;
+  margin-top: 4rem;
+}
+
+.form-btn:hover {
+  background-color: rgba(255 255 255 /24%);
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.fa-whatsapp.footer:hover {
+  color: #1c1a19;
+}
+
+.fa-linkedin.footer:hover {
+  color: #1c1a19;
+}
+
+.fa-twitter.footer:hover {
+  color: #1c1a19;
+}
+
+.fa-github.footer:hover {
+  color: #1c1a19;
+}
+
+.fa-envelope.footer:hover {
+  color: lightslategray;
 }
