@@ -428,6 +428,7 @@ li {
   border: 1px solid #ff6b00;
   margin-top: 1.5rem;
   border-radius: 0.2rem;
+  cursor:pointer;
 }
 
 .user-input {
