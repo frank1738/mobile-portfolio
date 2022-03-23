@@ -1,4 +1,4 @@
-**Portfolio project**
+**Portfolio project** <br>
 This is my  Microverse portfolio project whose main focus is to test my understanding in github,githubflows,version controll and to demonstrate the ability to submit a project for code review.This also helped me to understand how to parse a Figma design to create a UI,using flexbox to place elements in the page,building a personal portfolio site using images and backgrounds to enhance the look of the website and adding responsive web design to my webpage project.
 
 **Built With:**</br>
@@ -14,8 +14,8 @@ This is my  Microverse portfolio project whose main focus is to test my understa
 *Type git clone, and then paste the URL you copied earlier.</br>
 *Press Enter to create your local clone.
 
-**Authors**
-👤 Author1
+**Authors** <br>
+👤 Me
 * GitHub:https://github.com/frank1738
 * Twitter: https://twitter.com/frankhiggins08
 * LinkedIn: www.linkedin.com/in/frankline-osoro-b526ba18b
