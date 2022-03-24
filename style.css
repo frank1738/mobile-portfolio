@@ -46,6 +46,8 @@ body {
 
 .name {
   color: white;
+  animation: drop 3s ease;
+  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .link-item {
@@ -315,6 +317,7 @@ li {
 
 .first-project {
   background-image: url("./workImages/Img\ Placeholder.png");
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .submit-btn.after:hover {
@@ -783,4 +786,48 @@ li {
     width: 80%;
     padding: 0.5rem 1rem;
   }
+}
+
+.email-image {
+  animation: drop 3s ease;
+  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.menu-link {
+  animation: drop 3s ease;
+  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px) rotateZ(360deg);
+  }
+}
+
+.menu-link:hover {
+  transform: scale(1.2);
+  color: #ff6b00;
+}
+
+.email-image:hover {
+  transform: scale(1.2);
+}
+
+.name:hover {
+  transform: scale(1.2);
+}
+
+.project:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px lightslategray;
+}
+
+.first-project:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px lightslategray;
 }
