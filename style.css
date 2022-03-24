@@ -39,6 +39,11 @@ body {
   font-size: 1rem;
 }
 
+.project {
+  background-image: url("./workImages/Img\ Placeholder.png");
+  padding-top: 3rem;
+}
+
 .name {
   color: white;
 }
@@ -55,6 +60,10 @@ body {
 .link {
   text-decoration: none;
   color: #143771;
+}
+
+.user-input.first-name {
+  display: none;
 }
 
 .link:hover {
@@ -78,10 +87,10 @@ body {
 }
 
 .intro-subheader {
-  font-family: "Crete Round", sans-serif;
+  font-family: poppins, sans-serif;
   font-style: normal;
-  font-size: 1.2rem;
-  color: lightgray;
+  font-size: 1.5rem;
+  color: whitesmoke;
 }
 
 .introduction {
@@ -90,6 +99,10 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
+  background-image: url("./workImages/background/frame-mobile-header.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100px;
 }
 
 .far-bars {
@@ -106,9 +119,17 @@ body {
   color: grey;
 }
 
+.project1 {
+  display: none;
+}
+
 .social-link {
   list-style: none;
   margin-bottom: 0.8rem;
+}
+
+.vec-3 {
+  display: none;
 }
 
 .fa-whatsapp {
@@ -166,18 +187,6 @@ body {
   top: 5%;
 }
 
-.work-container-subsequent {
-  margin-bottom: 1rem;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38 38 38 /0%) 0.75%,
-      rgba(38 38 38 /90%)
-      61.94%
-    );
-  padding: 1rem;
-}
-
 .work-header {
   padding: 2rem;
   font-family: "Crete Round", serif;
@@ -188,8 +197,12 @@ body {
   color: #1c1a19;
 }
 
-.work-description-container {
-  margin-top: 1rem;
+.user-input.first {
+  display: none;
+}
+
+.user-input.last {
+  display: none;
 }
 
 .worksub-header {
@@ -205,15 +218,20 @@ body {
 
 .work-description {
   font-size: 1rem;
-  margin-top: 0.5rem;
   color: white;
   font-family: poppins, sans-serif;
+  padding: 1rem;
 }
 
 .btns {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: -1rem;
+}
+
+.work {
+  padding: 1rem;
 }
 
 .btn {
@@ -259,7 +277,6 @@ li {
 
 .submit-btn {
   padding: 0.5rem 1.2rem;
-  margin-top: 1rem;
   border: 1px solid #ff6b00;
   background: #ff6b00;
   font-family: poppins, sans-serif;
@@ -274,6 +291,17 @@ li {
   border: 1px solid #ff6b00;
 }
 
+.btns.one {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.submit-btn.after.one {
+  margin: 0;
+}
+
 .submit-btn:focus {
   background-color: #ff6b00;
   color: white;
@@ -282,6 +310,11 @@ li {
 .submit-btn.after {
   width: 100%;
   padding: 0.6rem;
+  margin-top: -0.5rem;
+}
+
+.first-project {
+  background-image: url("./workImages/Img\ Placeholder.png");
 }
 
 .submit-btn.after:hover {
@@ -298,13 +331,8 @@ li {
 .subsequent-worksub-header {
   color: white;
   text-shadow: 0 0 10px gray;
-  margin-top: 5rem;
   font-size: 2rem;
-}
-
-.work {
-  padding: 1.5rem;
-  display: grid;
+  padding: 1rem;
 }
 
 .workimg {
@@ -314,6 +342,18 @@ li {
 .about-me {
   padding: 1.5rem;
   background-color: #1c1a19;
+  background-image: url("./workImages/background/frame-mobile-about.png");
+  background-repeat: no-repeat;
+  background-position: 100% 22%;
+  background-size: 100px;
+}
+
+.vec-4 {
+  display: none;
+}
+
+.vec-6 {
+  display: none;
 }
 
 .about-header {
@@ -335,6 +375,7 @@ li {
   background-color: #ff6b00;
   color: white;
   border: 1px solid #ff6b00;
+  border-radius: 0;
 }
 
 .get-btn:hover {
@@ -380,24 +421,6 @@ li {
   margin-bottom: 1.5rem;
 }
 
-.first {
-  position: absolute;
-  bottom: 26.5%;
-  right: 9%;
-}
-
-.second {
-  position: absolute;
-  bottom: 26.5%;
-  right: 9%;
-}
-
-.main {
-  position: absolute;
-  bottom: 25.9%;
-  right: 1%;
-}
-
 .form-section-div {
   padding: 2rem;
   padding-top: 5rem;
@@ -427,7 +450,6 @@ li {
   font-size: 1rem;
   border: 1px solid #ff6b00;
   margin-top: 1.5rem;
-  border-radius: 0.2rem;
   cursor: pointer;
 }
 
@@ -511,4 +533,254 @@ li {
 
 .fa-envelope.footer:hover {
   color: lightslategray;
+}
+
+.menu-bars {
+  display: none;
+}
+
+.social-links.start {
+  display: none;
+}
+
+.place1 {
+  display: none;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-view {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .name {
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .menu-bars {
+    display: block;
+    display: flex;
+    width: 40%;
+    font-family: poppins, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .project {
+    background-image: url("./workImages/Img\ Placeholder.png");
+    background-color: white;
+    object-fit: cover;
+    padding-top: 4rem;
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  .menu-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .email-image {
+    margin-top: 0.4rem;
+  }
+
+  .introduction {
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url("./workImages/background/frame-deskto-header.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 100% 100%;
+  }
+
+  .social-list {
+    flex-direction: column;
+  }
+
+  .logo {
+    text-decoration: none;
+  }
+
+  .intro-details {
+    width: 50%;
+    margin-left: 3rem;
+  }
+
+  .social-links.start {
+    display: block;
+    margin-left: 2rem;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .intro-header {
+    font-size: 2.5rem;
+  }
+
+  .work-container {
+    display: flex;
+  }
+
+  .workimg {
+    width: 45%;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  .work-description-container {
+    width: 30%;
+    margin-top: 0;
+  }
+
+  .subsequent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    grid-auto-rows: 400px;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .work-container-subsequent {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .submit-btn.after {
+    display: none;
+  }
+
+  .submit-btn.after.one {
+    display: block;
+    margin: 0;
+  }
+
+  .btns.one {
+    display: none;
+  }
+
+  .first-description {
+    display: none;
+  }
+
+  .project1 {
+    display: block;
+    width: 100%;
+    height: 21.9rem;
+    object-fit: cover;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+  }
+
+  .about-description {
+    width: 40%;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .about-me {
+    padding: 7rem;
+    margin-top: 1rem;
+    background-image: url("./workImages/background/frame-desktop-about.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 97% 28%;
+  }
+
+  .get-btn {
+    margin-top: 2rem;
+    border-radius: 0;
+  }
+
+  .additional-info {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .work-header {
+    font-size: 2.5rem;
+  }
+
+  .submit-btn.right {
+    margin-top: 1rem;
+  }
+
+  .form-section-div {
+    flex-direction: row;
+    padding: 0;
+    padding: 5rem 10rem;
+  }
+
+  .footer-description {
+    width: 42%;
+    text-align: start;
+    font-size: 1.8rem;
+    font-family: poppins, sans-serif;
+  }
+
+  .form-section {
+    margin-top: 0;
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .user-input {
+    width: 49%;
+    margin-top: 0;
+  }
+
+  .text-area {
+    margin-top: 0;
+    margin-top: 1.5rem;
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .user-input.email {
+    width: 80%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .form-btn {
+    align-self: flex-start;
+    margin-top: 1rem;
+    border-radius: 0;
+  }
+
+  .underline {
+    display: none;
+  }
+
+  .footer-social-links {
+    width: 15%;
+  }
+
+  .work {
+    padding: 3rem;
+  }
+
+  .user-input.full {
+    width: 80%;
+    padding: 0.5rem 1rem;
+  }
 }
