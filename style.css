@@ -42,6 +42,7 @@ body {
 .project {
   background-image: url("./workImages/Img\ Placeholder.png");
   padding-top: 3rem;
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .name {
@@ -582,6 +583,7 @@ li {
     background-color: white;
     object-fit: cover;
     padding-top: 4rem;
+    transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
   }
 
   .menu-bar {
@@ -823,6 +825,7 @@ li {
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 0 10px lightslategray;
+  background-color: black
 }
 
 .first-project:hover {
