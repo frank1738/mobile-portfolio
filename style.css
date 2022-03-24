@@ -39,6 +39,11 @@ body {
   font-size: 1rem;
 }
 
+.project {
+  background-image: url("./workImages/Img\ Placeholder.png");
+  padding-top: 3rem;
+}
+
 .name {
   color: white;
 }
@@ -94,6 +99,10 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
+  background-image: url("./workImages/background/frame-mobile-header.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100px;
 }
 
 .far-bars {
@@ -108,6 +117,10 @@ body {
 .menu-bar:hover {
   transform: scale(1.2);
   color: grey;
+}
+
+.project1 {
+  display: none;
 }
 
 .social-link {
@@ -174,20 +187,6 @@ body {
   top: 5%;
 }
 
-.work-container-subsequent {
-  margin-bottom: 1rem;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38 38 38 /0%) 0.75%,
-      rgba(38 38 38 /90%)
-      61.94%
-    );
-  padding: 1rem;
-  background-image: url("./workImages/place3.png");
-  margin-top: 1rem;
-}
-
 .work-header {
   padding: 2rem;
   font-family: "Crete Round", serif;
@@ -206,10 +205,6 @@ body {
   display: none;
 }
 
-.work-description-container {
-  margin-top: 1rem;
-}
-
 .worksub-header {
   color: #091e42;
   font-family: "Crete Round", serif;
@@ -223,15 +218,20 @@ body {
 
 .work-description {
   font-size: 1rem;
-  margin-top: 0.5rem;
   color: white;
   font-family: poppins, sans-serif;
+  padding: 1rem;
 }
 
 .btns {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: -1rem;
+}
+
+.work {
+  padding: 1rem;
 }
 
 .btn {
@@ -277,7 +277,6 @@ li {
 
 .submit-btn {
   padding: 0.5rem 1.2rem;
-  margin-top: 1rem;
   border: 1px solid #ff6b00;
   background: #ff6b00;
   font-family: poppins, sans-serif;
@@ -292,6 +291,17 @@ li {
   border: 1px solid #ff6b00;
 }
 
+.btns.one {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.submit-btn.after.one {
+  margin: 0;
+}
+
 .submit-btn:focus {
   background-color: #ff6b00;
   color: white;
@@ -300,6 +310,11 @@ li {
 .submit-btn.after {
   width: 100%;
   padding: 0.6rem;
+  margin-top: -0.5rem;
+}
+
+.first-project {
+  background-image: url("./workImages/Img\ Placeholder.png");
 }
 
 .submit-btn.after:hover {
@@ -316,13 +331,8 @@ li {
 .subsequent-worksub-header {
   color: white;
   text-shadow: 0 0 10px gray;
-  margin-top: 5rem;
   font-size: 2rem;
-}
-
-.work {
-  padding: 1.5rem;
-  display: grid;
+  padding: 1rem;
 }
 
 .workimg {
@@ -332,6 +342,10 @@ li {
 .about-me {
   padding: 1.5rem;
   background-color: #1c1a19;
+  background-image: url("./workImages/background/frame-mobile-about.png");
+  background-repeat: no-repeat;
+  background-position: 100% 22%;
+  background-size: 100px;
 }
 
 .vec-4 {
@@ -361,6 +375,7 @@ li {
   background-color: #ff6b00;
   color: white;
   border: 1px solid #ff6b00;
+  border-radius: 0;
 }
 
 .get-btn:hover {
@@ -406,24 +421,6 @@ li {
   margin-bottom: 1.5rem;
 }
 
-.first {
-  position: absolute;
-  bottom: 26.5%;
-  right: 9%;
-}
-
-.second {
-  position: absolute;
-  bottom: 26.5%;
-  right: 9%;
-}
-
-.main {
-  position: absolute;
-  bottom: 25.9%;
-  right: 1%;
-}
-
 .form-section-div {
   padding: 2rem;
   padding-top: 5rem;
@@ -453,7 +450,6 @@ li {
   font-size: 1rem;
   border: 1px solid #ff6b00;
   margin-top: 1.5rem;
-  border-radius: 0.2rem;
   cursor: pointer;
 }
 
@@ -551,9 +547,15 @@ li {
   display: none;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .mobile-view {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .name {
@@ -572,6 +574,13 @@ li {
     font-size: 1.2rem;
   }
 
+  .project {
+    background-image: url("./workImages/Img\ Placeholder.png");
+    background-color: white;
+    object-fit: cover;
+    padding-top: 4rem;
+  }
+
   .menu-bar {
     display: none;
   }
@@ -588,6 +597,12 @@ li {
   .introduction {
     display: flex;
     align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url("./workImages/background/frame-deskto-header.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 100% 100%;
   }
 
   .social-list {
@@ -601,24 +616,6 @@ li {
   .intro-details {
     width: 50%;
     margin-left: 3rem;
-  }
-
-  .vector-image {
-    right: 25%;
-    top: 5%;
-  }
-
-  .vec-3 {
-    display: block;
-    position: absolute;
-    top: 4%;
-    right: 1%;
-    height: 15rem;
-  }
-
-  .second-vector {
-    right: 25%;
-    top: 5%;
   }
 
   .social-links.start {
@@ -636,77 +633,56 @@ li {
 
   .work-container {
     display: flex;
-    align-items: center;
   }
 
   .workimg {
-    width: 480px;
+    width: 45%;
+    height: auto;
+    margin-right: 1rem;
   }
 
   .work-description-container {
-    width: 25%;
+    width: 30%;
     margin-top: 0;
-    margin-left: 2rem;
   }
 
   .subsequent {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    grid-auto-rows: 400px;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
   }
 
   .work-container-subsequent {
-    margin-left: 1rem;
-    width: 30%;
-  }
-
-  .work-container-subsequent.one {
-    margin-left: 0;
+    width: 350px;
+    margin: 0;
     padding: 0;
-  }
-
-  .work-container-subsequent.two {
-    background-image: url("./workImages/Img\ Placeholder.png");
-  }
-
-  .work-container-subsequent.three {
-    background-image: url("./workImages/Img\ Placeholder.png");
-  }
-
-  .work-container-subsequent.four {
-    margin-left: 0;
-    background-image: url("./workImages/Img\ Placeholder.png");
-  }
-
-  .work-container-subsequent.five {
-    background-image: url("./workImages/Img\ Placeholder.png");
-  }
-
-  .work-container-subsequent.six {
-    background-image: url("./workImages/Img\ Placeholder.png");
   }
 
   .submit-btn.after {
     display: none;
   }
 
-  .btns.one {
-    display: none;
-  }
-
   .submit-btn.after.one {
     display: block;
-    margin-top: 0;
+    margin: 0;
+  }
+
+  .btns.one {
+    display: none;
   }
 
   .first-description {
     display: none;
   }
 
-  .place1 {
+  .project1 {
     display: block;
     width: 100%;
-    height: 21rem;
+    height: 21.9rem;
     object-fit: cover;
   }
 
@@ -721,14 +697,17 @@ li {
   }
 
   .about-me {
-    padding-left: 5rem;
-    margin-top: 1.5rem;
-    padding-bottom: 5rem;
+    padding: 7rem;
+    margin-top: 1rem;
+    background-image: url("./workImages/background/frame-desktop-about.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 97% 28%;
   }
 
   .get-btn {
     margin-top: 2rem;
-    border-radius: 0.2rem;
+    border-radius: 0;
   }
 
   .additional-info {
@@ -737,25 +716,12 @@ li {
     justify-content: space-between;
   }
 
-  .user-input.full {
-    display: none;
-  }
-
-  .user-input.first-name {
-    display: block;
-  }
-
-  .user-input.last {
-    display: block;
-  }
-
   .work-header {
     font-size: 2.5rem;
   }
 
   .submit-btn.right {
-    margin-top: 1.7rem;
-    border-radius: 0.2rem;
+    margin-top: 1rem;
   }
 
   .form-section-div {
@@ -777,12 +743,6 @@ li {
     margin-left: 3rem;
   }
 
-  .optional-div {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-  }
-
   .user-input {
     width: 49%;
     margin-top: 0;
@@ -792,17 +752,20 @@ li {
     margin-top: 0;
     margin-top: 1.5rem;
     width: 80%;
+    padding: 1rem;
   }
 
   .user-input.email {
     width: 80%;
     margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
   }
 
   .form-btn {
     align-self: flex-start;
-    margin-top: 0;
     margin-top: 1rem;
+    margin-top: 1rem 0.5rem;
+    border-radius: 0;
   }
 
   .underline {
@@ -813,109 +776,12 @@ li {
     width: 15%;
   }
 
-  .first {
-    bottom: 33%;
-    right: 28%;
+  .work {
+    padding: 3rem;
   }
 
-  .second {
-    bottom: 33%;
-    right: 26%;
-  }
-
-  .main {
-    bottom: 32%;
-    right: 25%;
-  }
-
-  .vec-4 {
-    display: block;
-    bottom: 33%;
-    right: 16%;
-    position: absolute;
-  }
-
-  .vec-6 {
-    display: block;
-    position: absolute;
-    bottom: 36.6%;
-    right: 11.5%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1100px) {
-  .intro-details {
-    width: 60%;
-  }
-
-  .first {
-    bottom: 28%;
-    right: 28%;
-  }
-
-  .second {
-    bottom: 28%;
-    right: 26%;
-  }
-
-  .main {
-    bottom: 27.5%;
-    right: 25%;
-  }
-
-  .vec-4 {
-    display: block;
-    bottom: 28%;
-    right: 5%;
-    position: absolute;
-  }
-
-  .vec-6 {
-    display: block;
-    position: absolute;
-    bottom: 33.9%;
-    right: 11.5%;
-  }
-
-  .workimg {
-    width: 400px;
-  }
-
-  .work-container-subsequent {
-    width: 40%;
-  }
-
-  .work-container-subsequent.three {
-    margin-left: 0;
-  }
-
-  .work-container-subsequent.four {
-    margin-left: 1rem;
-  }
-
-  .work-container-subsequent.five {
-    margin-left: 0;
-  }
-
-  .form-section-div {
-    padding-left: 1rem;
-  }
-
-  .vector-image {
-    right: 25%;
-    top: 5%;
-  }
-
-  .vec-3 {
-    display: block;
-    position: absolute;
-    top: 4%;
-    right: 1%;
-    height: 15rem;
-  }
-
-  .second-vector {
-    right: 25%;
-    top: 5%;
+  .user-input.full {
+    width: 80%;
+    padding: 0.5rem 1rem;
   }
 }
