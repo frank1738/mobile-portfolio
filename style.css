@@ -47,7 +47,7 @@ body {
 .name {
   color: white;
   animation: drop 3s ease;
-  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1)
+  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .link-item {
@@ -317,6 +317,7 @@ li {
 
 .first-project {
   background-image: url("./workImages/Img\ Placeholder.png");
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .submit-btn.after:hover {
@@ -794,18 +795,16 @@ li {
 
 .menu-link {
   animation: drop 3s ease;
+  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 @keyframes drop {
-	0% { opacity: 0;
-	transform: translateX(-80px) rotateZ(360deg)};
-	100% {opacity: 1;
-	transform: tranlateX(0px) rotateZ(360deg)}
+  0% {
+    opacity: 0;
+    transform: translateX(-80px) rotateZ(360deg);
+  }
 }
 
- .menu-link {
-  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
-}
 .menu-link:hover {
   transform: scale(1.2);
 }
@@ -818,19 +817,11 @@ li {
   transform: scale(1.2);
 }
 
-.project {
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
-}
-
 .project:hover {
   transform: scale(1.1);
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 0 10px lightslategray;
-}
-
-.first-project {
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .first-project:hover {
@@ -839,4 +830,3 @@ li {
   border-radius: 1rem;
   box-shadow: 0 0 10px lightslategray;
 }
-
