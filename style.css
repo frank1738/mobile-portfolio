@@ -43,7 +43,7 @@ body {
   background-image: url("./workImages/Img\ Placeholder.png");
   padding-top: 3rem;
   transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
