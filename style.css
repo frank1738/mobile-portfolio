@@ -828,9 +828,6 @@ li {
 
 .project:hover {
   transform: scale(1.1);
-  border-radius: 1rem;
-  box-shadow: 0 0 10px lightslategray;
-  background-color: black
 }
 
 .first-project:hover {
