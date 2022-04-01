@@ -38,11 +38,12 @@ body {
 }
 
 .project {
-  background-image: url("./workImages/Img\ Placeholder.png");
+  background-color: rgba(0 0 0/ 75%);
+  background-image: url("./workImages/work-1.jpeg");
   padding-top: 3rem;
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
   margin-top: 1.5rem;
 }
 
@@ -339,9 +340,9 @@ li {
 
 .subsequent-worksub-header {
   color: white;
-  text-shadow: 0 0 10px gray;
   font-size: 2rem;
   padding: 1rem;
+  opacity: 0.8;
 }
 
 .workimg {
@@ -584,11 +585,12 @@ li {
   }
 
   .project {
-    background-image: url("./workImages/Img\ Placeholder.png");
-    background-color: white;
+    background-color: rgba(0 0 0/ 75%);
+    background-image: url("./workImages/headerBcg.jpeg");
     object-fit: cover;
     padding-top: 4rem;
     transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
+    background-blend-mode: multiply;
     margin: 0;
   }
 
@@ -794,6 +796,10 @@ li {
     width: 80%;
     padding: 0.5rem 1rem;
   }
+
+  .project:hover {
+    transform: scale(1.08);
+  }
 }
 
 .email-image {
@@ -824,10 +830,6 @@ li {
 
 .name:hover {
   transform: scale(1.2);
-}
-
-.project:hover {
-  transform: scale(1.1);
 }
 
 .first-project:hover {
