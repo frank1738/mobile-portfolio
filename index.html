@@ -19,15 +19,31 @@
     <title>My portfolio</title>
   </head>
   <body>
-    <div class="mobile-view">
-      <header class="header_section">
+    <div class="mobile-view" id="home">
+      <header class="header-section">
         <nav class="navigation">
-          <a href="#home" class="logo"> <h3 class="name">frank</h3></a>
+          <div class="mob-menu">
+            <div class="remove-img">
+              <div class="remove-btn"
+                ><i class="fa-solid fa-xmark"></i
+              ></div>
+            </div>
+            <ul class="mobile-links">
+              <li class="mobile-item">
+                <a href="#portfolio" class="mob-link">Portfolio</a>
+              </li>
+              <li class="mobile-item"><a href="#about" class="mob-link">About</a></li>
+              <li class="mobile-item">
+                <a href="#contact" class="mob-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#home" class="logo"> <h3 class="name desktop">frank</h3></a>
           <div class="menu-bars">
-            <a href="#" class="menu-link"> Portfolio</a>
-            <a href="#" class="menu-link"> About</a>
-            <a href="#" class="menu-link"> Contact</a>
-            <a href=""
+            <a href="#work" class="menu-link "> Portfolio</a>
+            <a href="#about" class="menu-link"> About</a>
+            <a href="#contact" class="menu-link"> Contact</a>
+            <a href="#"
               ><img
                 src="./workImages/Union.png"
                 alt="email-image"
@@ -110,7 +126,7 @@
             <button class="submit-btn right">See Project</button>
           </div>
         </div>
-        <div class="subsequent">
+        <div class="subsequent" id="work">
           <div class="project-container">
             <div class="project">
               <div class="sub-description">
@@ -157,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="project-container">
+          <div class="project-container" id="portfolio">
             <div class="project">
               <div class="sub-description">
                 <h2 class="subsequent-worksub-header">
@@ -250,7 +266,7 @@
           </div>
         </div>
       </section>
-      <section class="about-me">
+      <section class="about-me" id="about">
         <h1 class="about-header">About Me</h1>
         <p class="about-description">
           Hello I’m a software developer! I can help you build a product ,
@@ -312,7 +328,7 @@
           </div>
         </div>
       </section>
-      <div class="form-section-div">
+      <div class="form-section-div" id="contact">
         <h3 class="footer-description">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
@@ -368,5 +384,6 @@
         <div class="underline"></div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
