@@ -61,6 +61,11 @@ body {
   text-decoration: none;
   font-family: poppins, sans-serif;
   font-size: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.mob-link:hover {
+  color: #ff6b00;
 }
 
 .mobile-item {
