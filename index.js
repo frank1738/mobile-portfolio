@@ -19,13 +19,9 @@ mobileLinks.forEach((link) => {
   link.addEventListener('click', removeMenuTab);
 });
 
-desktopLinks.forEach((link) => {
-  link.addEventListener('click', select);
-});
-
 let selectedLink = '';
 
-function select() {
+function select(event) {
   homeLink.classList.remove('selected');
   if (selectedLink) {
     selectedLink.classList.remove('selected');
@@ -40,3 +36,6 @@ function select() {
 hamburgerBtn.addEventListener('click', showMenuTab);
 removeBtn.addEventListener('click', removeMenuTab);
 homeLink.addEventListener('click', select);
+desktopLinks.forEach((link) => {
+  link.addEventListener('click', select);
+});
