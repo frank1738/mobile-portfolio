@@ -13,6 +13,80 @@ body {
   background-color: lightgrey;
 }
 
+.pop-up {
+  background-color: rgba(0 0 0/ 75%);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.description-container.remove {
+  display: none;
+}
+
+.pop-head {
+  display: flex;
+  justify-content: space-between;
+  font-family: poppins, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.btn.snap {
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.submit-btn.right.pop-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: poppins, sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  padding: 0.5rem 1rem;
+}
+
+.btn-img {
+  margin-left: 1rem;
+}
+
+.btns.one.snap {
+  width: 90%;
+}
+
+.btns.pop {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.pop-container {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  padding: 1rem 0.7rem;
+  margin-top: 3.5rem;
+  overflow-y: scroll;
+}
+
+.snapshot {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.pop-description {
+  font-family: poppins, sans-serif;
+}
+
 .mobile-view {
   width: 100%;
   position: absolute;
@@ -94,8 +168,7 @@ body {
 }
 
 .project {
-  background-color: rgba(0 0 0/ 75%);
-  background-image: url("./workImages/headerBcg.jpeg");
+  background-image: url("./workImages/Img\ Placeholder.png");
   padding-top: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -399,7 +472,6 @@ li {
   color: white;
   font-size: 2rem;
   padding: 1rem;
-  opacity: 0.8;
 }
 
 .workimg {
@@ -625,6 +697,41 @@ li {
     margin: 0;
   }
 
+  .pop-img-div {
+    display: flex;
+    width: 100%;
+  }
+
+  .pop-container {
+    padding: 1.5rem 2rem;
+  }
+
+  .pop-description {
+    margin-top: 1rem;
+  }
+
+  .pop-btn-desc {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .snap-div {
+    width: 50%;
+    margin-right: 2rem;
+  }
+
+  .btns.pop {
+    margin-bottom: 0.3rem;
+  }
+
+  .btns.one.snap {
+    display: block;
+    display: flex;
+    width: 23%;
+  }
+
   .mob-menu {
     display: none;
   }
@@ -646,8 +753,6 @@ li {
   }
 
   .project {
-    background-color: rgba(0 0 0/ 75%);
-    background-image: url("./workImages/headerBcg.jpeg");
     object-fit: cover;
     padding-top: 4rem;
     transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
@@ -746,9 +851,18 @@ li {
     display: none;
   }
 
+  .submit-btn.after.first {
+    display: block;
+    margin-top: 0.9rem;
+  }
+
   .submit-btn.after.one {
     display: block;
     margin: 0;
+  }
+
+  .btns.first {
+    display: none;
   }
 
   .btns.one {
