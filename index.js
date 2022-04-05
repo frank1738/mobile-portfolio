@@ -49,8 +49,6 @@ desktopLinks.forEach((link) => {
   link.addEventListener('click', select);
 });
 
-
-
 function removeDescription() {
   popDiv.classList.add('remove');
   hidden = true;
