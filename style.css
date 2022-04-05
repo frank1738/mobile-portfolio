@@ -168,8 +168,7 @@ body {
 }
 
 .project {
-  background-color: rgba(0 0 0/ 75%);
-  background-image: url("./workImages/headerBcg.jpeg");
+  background-image: url("./workImages/Img\ Placeholder.png");
   padding-top: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -473,7 +472,6 @@ li {
   color: white;
   font-size: 2rem;
   padding: 1rem;
-  opacity: 0.8;
 }
 
 .workimg {
@@ -755,8 +753,6 @@ li {
   }
 
   .project {
-    background-color: rgba(0 0 0/ 75%);
-    background-image: url("./workImages/headerBcg.jpeg");
     object-fit: cover;
     padding-top: 4rem;
     transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
