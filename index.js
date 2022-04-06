@@ -175,8 +175,8 @@ projectBtns.forEach((btn) => {
 });
 
 function validate(event) {
-  const lower_case = email.value.toLowerCase();
-  if (lower_case === email.value) {
+  const lowerCase = email.value.toLowerCase();
+  if (lowerCase === email.value) {
     messege.innerText = '';
     form.submit();
   } else {
