@@ -590,6 +590,7 @@ li {
   border: 1px solid #ff6b00;
   margin-top: 0.5rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .user-input {
