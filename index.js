@@ -8,6 +8,9 @@ homeLink.classList.add('selected');
 const popDiv = document.querySelector('.description-container');
 const projectContainer = document.querySelectorAll('.last-container');
 const workSection = document.querySelector('.work-section-div');
+const form=document.querySelector('.form-section')
+const email=document.querySelector('.email')
+const messege=document.querySelector('.messege')
 const myData = {
   title: 'Multi post stories',
   html: 'html',
@@ -170,3 +173,17 @@ const projectBtns = document.querySelectorAll('.project-btn');
 projectBtns.forEach((btn) => {
   btn.addEventListener('click', popUp);
 });
+
+function validate(event){
+  const lower_case=email.value.toLowerCase()
+  if(lower_case===email.value){
+    messege.innerText=''
+    form.submit()
+  }
+  else{
+    event.preventDefault()
+    messege.innerText='email address should be lower case!'
+  }
+}
+
+form.addEventListener('submit', validate)

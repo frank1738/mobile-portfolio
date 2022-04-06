@@ -588,7 +588,7 @@ li {
   font-family: poppins, sans-serif;
   font-size: 1rem;
   border: 1px solid #ff6b00;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   cursor: pointer;
 }
 
@@ -1018,4 +1018,10 @@ li {
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 0 10px lightslategray;
+}
+
+.messege {
+  font-family: poppins, sans-serif;
+  margin-top: 0.5rem;
+  color: red;
 }
