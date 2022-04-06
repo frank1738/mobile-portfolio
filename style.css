@@ -177,10 +177,6 @@ body {
   border-radius: 0.3rem;
 }
 
-.project-container {
-  overflow: hidden;
-}
-
 .name {
   color: white;
   animation: drop 3s ease;
@@ -450,11 +446,6 @@ li {
   width: 100%;
   padding: 0.6rem;
   margin-top: -0.5rem;
-}
-
-.first-project {
-  background-image: url("./workImages/Img\ Placeholder.png");
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .submit-btn.after:hover {
@@ -980,7 +971,7 @@ li {
   }
 
   .project:hover {
-    transform: scale(1.08);
+    transform: scale(0.95);
   }
 }
 
