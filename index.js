@@ -190,15 +190,15 @@ function validate(event) {
 form.addEventListener('submit', validate);
 
 if (!localStorage.getItem('formData')) {
-  var nameUpdate = '';
-  var emailUpdate = '';
-  var textUpdate = '';
+  let nameUpdate = '';
+  let emailUpdate = '';
+  let textUpdate = '';
 } else {
   const mydata = localStorage.getItem('formData');
   const parsedData = JSON.parse(mydata);
-  var nameUpdate = parsedData.name;
-  var emailUpdate = parsedData.email;
-  var textUpdate = parsedData.text;
+   nameUpdate = parsedData.name;
+   emailUpdate = parsedData.email;
+   textUpdate = parsedData.text;
   fullName.value = nameUpdate;
   emailAddress.value = emailUpdate;
   textArea.value = textUpdate;
