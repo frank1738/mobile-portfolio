@@ -9,8 +9,10 @@ const popDiv = document.querySelector('.description-container');
 const projectContainer = document.querySelectorAll('.last-container');
 const workSection = document.querySelector('.work-section-div');
 const form = document.querySelector('.form-section');
-const email = document.querySelector('.email');
+const emailAddress = document.querySelector('.email');
 const messege = document.querySelector('.messege');
+const fullName = document.querySelector('.full');
+const textArea = document.querySelector('.text-area');
 const myData = {
   title: 'Multi post stories',
   html: 'html',
@@ -175,8 +177,8 @@ projectBtns.forEach((btn) => {
 });
 
 function validate(event) {
-  const lowerCase = email.value.toLowerCase();
-  if (lowerCase === email.value) {
+  const lowerCase = emailAddress.value.toLowerCase();
+  if (lowerCase === emailAddress.value) {
     messege.innerText = '';
     form.submit();
   } else {
@@ -186,3 +188,58 @@ function validate(event) {
 }
 
 form.addEventListener('submit', validate);
+
+if (!localStorage.getItem('formData')) {
+  var nameUpdate = '';
+  var emailUpdate = '';
+  var textUpdate = '';
+} else {
+  const mydata = localStorage.getItem('formData');
+  const parsedData = JSON.parse(mydata);
+  var nameUpdate = parsedData.name;
+  var emailUpdate = parsedData.email;
+  var textUpdate = parsedData.text;
+  fullName.value = nameUpdate;
+  emailAddress.value = emailUpdate;
+  textArea.value = textUpdate;
+}
+updateLocalStorage();
+function updateLocalStorage() {
+  if (!localStorage.getItem('formData')) {
+    let formData = {
+      name: '',
+      email: '',
+      text: '',
+    };
+    let stringifiedFormData = JSON.stringify(formData);
+    localStorage.setItem('formData', stringifiedFormData);
+  } else {
+    let formData = {
+      name: nameUpdate,
+      email: emailUpdate,
+      text: textUpdate,
+    };
+    let stringifiedFormData = JSON.stringify(formData);
+    localStorage.setItem('formData', stringifiedFormData);
+  }
+}
+
+function updateName(event) {
+  nameUpdate = event.target.value;
+  updateLocalStorage();
+}
+
+function updateEmail(event) {
+  emailUpdate = event.target.value;
+  updateLocalStorage();
+}
+
+function updateText(event) {
+  textUpdate = event.target.value;
+  console.log('yea');
+  updateLocalStorage();
+}
+
+fullName.addEventListener('change', updateName);
+emailAddress.addEventListener('change', updateEmail);
+textArea.addEventListener('change', updateText);
