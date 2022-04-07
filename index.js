@@ -189,57 +189,35 @@ function validate(event) {
 
 form.addEventListener('submit', validate);
 
-if (!localStorage.getItem('formData')) {
-  let nameUpdate = '';
-  let emailUpdate = '';
-  let textUpdate = '';
-} else {
-  const mydata = localStorage.getItem('formData');
-  const parsedData = JSON.parse(mydata);
-   nameUpdate = parsedData.name;
-   emailUpdate = parsedData.email;
-   textUpdate = parsedData.text;
-  fullName.value = nameUpdate;
-  emailAddress.value = emailUpdate;
-  textArea.value = textUpdate;
-}
-updateLocalStorage();
-function updateLocalStorage() {
-  if (!localStorage.getItem('formData')) {
-    let formData = {
-      name: '',
-      email: '',
-      text: '',
-    };
-    let stringifiedFormData = JSON.stringify(formData);
-    localStorage.setItem('formData', stringifiedFormData);
-  } else {
-    let formData = {
-      name: nameUpdate,
-      email: emailUpdate,
-      text: textUpdate,
-    };
-    let stringifiedFormData = JSON.stringify(formData);
-    localStorage.setItem('formData', stringifiedFormData);
-  }
+const formContent = {
+  name: '',
+  email: '',
+  text: '',
+};
+
+if (localStorage.getItem('formContacts')) {
+  const formData = localStorage.getItem('formContacts');
+  const parsedData = JSON.parse(formData);
+  fullName.value = parsedData.name;
+  emailAddress.value = parsedData.email;
+  textArea.value = parsedData.text;
 }
 
-function updateName(event) {
-  nameUpdate = event.target.value;
-  updateLocalStorage();
+function updateName() {
+  formContent.name = fullName.value;
+  localStorage.setItem('formContacts', JSON.stringify(formContent));
 }
 
-function updateEmail(event) {
-  emailUpdate = event.target.value;
-  updateLocalStorage();
+function updateEmail() {
+  formContent.email = emailAddress.value;
+  localStorage.setItem('formContacts', JSON.stringify(formContent));
 }
 
-function updateText(event) {
-  textUpdate = event.target.value;
-  console.log('yea');
-  updateLocalStorage();
+function updateText() {
+  formContent.text = textArea.value;
+  localStorage.setItem('formContacts', JSON.stringify(formContent));
 }
 
-fullName.addEventListener('change', updateName);
-emailAddress.addEventListener('change', updateEmail);
-textArea.addEventListener('change', updateText);
+fullName.addEventListener('input', updateName);
+emailAddress.addEventListener('input', updateEmail);
+textArea.addEventListener('input', updateText);
