@@ -9,8 +9,10 @@ const popDiv = document.querySelector('.description-container');
 const projectContainer = document.querySelectorAll('.last-container');
 const workSection = document.querySelector('.work-section-div');
 const form = document.querySelector('.form-section');
-const email = document.querySelector('.email');
+const emailAddress = document.querySelector('.email');
 const messege = document.querySelector('.messege');
+const fullName = document.querySelector('.full');
+const textArea = document.querySelector('.text-area');
 const myData = {
   title: 'Multi post stories',
   html: 'html',
@@ -175,8 +177,8 @@ projectBtns.forEach((btn) => {
 });
 
 function validate(event) {
-  const lowerCase = email.value.toLowerCase();
-  if (lowerCase === email.value) {
+  const lowerCase = emailAddress.value.toLowerCase();
+  if (lowerCase === emailAddress.value) {
     messege.innerText = '';
     form.submit();
   } else {
@@ -186,3 +188,36 @@ function validate(event) {
 }
 
 form.addEventListener('submit', validate);
+
+const formContent = {
+  name: '',
+  email: '',
+  text: '',
+};
+
+if (localStorage.getItem('formContacts')) {
+  const formData = localStorage.getItem('formContacts');
+  const parsedData = JSON.parse(formData);
+  fullName.value = parsedData.name;
+  emailAddress.value = parsedData.email;
+  textArea.value = parsedData.text;
+}
+
+function updateName() {
+  formContent.name = fullName.value;
+  localStorage.setItem('formContacts', JSON.stringify(formContent));
+}
+
+function updateEmail() {
+  formContent.email = emailAddress.value;
+  localStorage.setItem('formContacts', JSON.stringify(formContent));
+}
+
+function updateText() {
+  formContent.text = textArea.value;
+  localStorage.setItem('formContacts', JSON.stringify(formContent));
+}
+
+fullName.addEventListener('input', updateName);
+emailAddress.addEventListener('input', updateEmail);
+textArea.addEventListener('input', updateText);
