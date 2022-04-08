@@ -220,4 +220,4 @@ function updateText() {
 
 fullName.addEventListener('input', updateName);
 emailAddress.addEventListener('input', updateEmail);
-textArea.addEventListener('input', updateText);
+textArea.addEventListener('input', updateText();
